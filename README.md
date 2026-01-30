@@ -1,4 +1,4 @@
-# AAE5303 Environment Setup Report — Template for Students
+# AAE5303 Environment Setup Report
 
 > **Important:** Follow this structure exactly in your submission README.  
 > Your goal is to demonstrate **evidence, process, problem-solving, and reflection** — not only screenshots.
@@ -331,7 +331,7 @@ Short but thoughtful:
 
 **Your reflection:**
 
-I found that the "Reopen in Container" feature is convenient, but it relies heavily on a stable network connection. By switching to manual Docker commands (like docker build and docker run), I got a much clearer understanding of how containers mount volumes. I was also surprised to find that simply changing the base image to osrf/ros:humble-desktop fixed almost all dependency problems right away.
+Although the IDE's auto-configuration is convenient, it relies too heavily on the network, often causing download timeouts. I completed this task by manually executing Docker commands. Initially, the generic Python image caused many missing dependency errors, but switching to the ROS image resolved them. Next time, I will check the base image in the Dockerfile first. I feel more confident about future debugging because this experience taught me the underlying principles before taking action.
 
 ---
 
